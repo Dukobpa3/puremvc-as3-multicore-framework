@@ -12,7 +12,7 @@ package org.puremvc.as3.multicore.core
 	 * 
 	 * <P>
 	 * In PureMVC, the <code>Model</code> class provides
-	 * access to model objects (Proxies) by named lookup. 
+	 * access to model objects (Proxies) by named lookup.</P>
 	 * 
 	 * <P>
 	 * The <code>Model</code> assumes these responsibilities:</P>
@@ -28,7 +28,7 @@ package org.puremvc.as3.multicore.core
 	 * with the <code>Model</code>. Typically, you use an 
 	 * <code>ICommand</code> to create and register <code>IProxy</code> 
 	 * instances once the <code>Facade</code> has initialized the Core 
-	 * actors.</p>
+	 * actors.</P>
 	 *
 	 * @see org.puremvc.as3.multicore.patterns.proxy.Proxy Proxy
 	 * @see org.puremvc.as3.multicore.interfaces.IProxy IProxy
@@ -38,11 +38,10 @@ package org.puremvc.as3.multicore.core
 		/**
 		 * Constructor. 
 		 * 
-		 * <P>
-		 * This <code>IModel</code> implementation is a Multiton, 
+		 * <P>This <code>IModel</code> implementation is a Multiton,
 		 * so you should not call the constructor 
 		 * directly, but instead call the static Multiton 
-		 * Factory method <code>Model.getInstance( multitonKey )</code>
+		 * Factory method <code>Model.getInstance( multitonKey )</code></P>
 		 * 
 		 * @throws Error Error if instance for this Multiton key instance has already been constructed
 		 * 
@@ -59,8 +58,7 @@ package org.puremvc.as3.multicore.core
 		/**
 		 * Initialize the <code>Model</code> instance.
 		 * 
-		 * <P>
-		 * Called automatically by the constructor, this
+		 * <P>Called automatically by the constructor, this
 		 * is your opportunity to initialize the Singleton
 		 * instance in your subclass without overriding the
 		 * constructor.</P>
@@ -136,7 +134,7 @@ package org.puremvc.as3.multicore.core
 		/**
 		 * Remove an IModel instance
 		 * 
-		 * @param multitonKey of IModel instance to remove
+		 * @param key of IModel instance to remove
 		 */
 		public static function removeModel( key:String ):void
 		{

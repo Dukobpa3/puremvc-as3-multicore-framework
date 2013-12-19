@@ -10,7 +10,7 @@ package org.puremvc.as3.multicore.core
 	/**
 	 * A Multiton <code>IController</code> implementation.
 	 * 
-	 * <P>
+	 * <P/>
 	 * In PureMVC, the <code>Controller</code> class follows the
 	 * 'Command and Controller' strategy, and assumes these 
 	 * responsibilities:
@@ -26,13 +26,14 @@ package org.puremvc.as3.multicore.core
 	 * method, passing in the <code>INotification</code>.</LI> 
 	 * </UL>
 	 * 
-	 * <P>
+	 * <P/>
 	 * Your application must register <code>ICommands</code> with the 
 	 * Controller.
-	 * <P>
- 	 * The simplest way is to subclass </code>Facade</code>, 
+	 *
+	 * <P/>
+ 	 * The simplest way is to subclass <code>Facade</code>,
 	 * and use its <code>initializeController</code> method to add your 
-	 * registrations. 
+	 * registrations.
 	 * 
 	 * @see org.puremvc.as3.multicore.core.View View
 	 * @see org.puremvc.as3.multicore.patterns.observer.Observer Observer
@@ -51,7 +52,7 @@ package org.puremvc.as3.multicore.core
 		 * so you should not call the constructor 
 		 * directly, but instead call the static Factory method, 
 		 * passing the unique key for this instance 
-		 * <code>Controller.getInstance( multitonKey )</code>
+		 * <code>Controller.getInstance( multitonKey )</code></P>
 		 * 
 		 * @throws Error Error if instance for this Multiton key has already been constructed
 		 * 
@@ -172,7 +173,7 @@ package org.puremvc.as3.multicore.core
 		/**
 		 * Remove an IController instance
 		 * 
-		 * @param multitonKey of IController instance to remove
+		 * @param key of IController instance to remove
 		 */
 		public static function removeController( key:String ):void
 		{

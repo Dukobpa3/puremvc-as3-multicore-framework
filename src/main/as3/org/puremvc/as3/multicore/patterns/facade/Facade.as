@@ -25,7 +25,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * so you should not call the constructor 
 		 * directly, but instead call the static Factory method, 
 		 * passing the unique key for this instance 
-		 * <code>Facade.getInstance( multitonKey )</code>
+		 * <code>Facade.getInstance( multitonKey )</code></P>
 		 * 
 		 * @throws Error Error if instance for this Multiton key has already been constructed
 		 * 
@@ -70,7 +70,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * if one or both of the following are true:
 		 * <UL>
 		 * <LI> You wish to initialize a different <code>IController</code>.</LI>
-		 * <LI> You have <code>Commands</code> to register with the <code>Controller</code> at startup.</code>. </LI>		  
+		 * <LI> You have <code>Commands</code> to register with the <code>Controller</code> at startup.</LI>
 		 * </UL>
 		 * If you don't want to initialize a different <code>IController</code>, 
 		 * call <code>super.initializeController()</code> at the beginning of your
@@ -88,11 +88,11 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * <P>
 		 * Called by the <code>initializeFacade</code> method.
 		 * Override this method in your subclass of <code>Facade</code> 
-		 * if one or both of the following are true:
+		 * if one or both of the following are true:</P>
 		 * <UL>
 		 * <LI> You wish to initialize a different <code>IModel</code>.</LI>
 		 * <LI> You have <code>Proxy</code>s to register with the Model that do not 
-		 * retrieve a reference to the Facade at construction time.</code></LI> 
+		 * retrieve a reference to the Facade at construction time.</LI>
 		 * </UL>
 		 * If you don't want to initialize a different <code>IModel</code>, 
 		 * call <code>super.initializeModel()</code> at the beginning of your
@@ -117,7 +117,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * <P>
 		 * Called by the <code>initializeFacade</code> method.
 		 * Override this method in your subclass of <code>Facade</code> 
-		 * if one or both of the following are true:
+		 * if one or both of the following are true:</P>
 		 * <UL>
 		 * <LI> You wish to initialize a different <code>IView</code>.</LI>
 		 * <LI> You have <code>Observers</code> to register with the <code>View</code></LI>
@@ -173,7 +173,6 @@ package org.puremvc.as3.multicore.patterns.facade
 		/**
 		 * Register an <code>IProxy</code> with the <code>Model</code> by name.
 		 * 
-		 * @param proxyName the name of the <code>IProxy</code>.
 		 * @param proxy the <code>IProxy</code> instance to be registered with the <code>Model</code>.
 		 */
 		public function registerProxy ( proxy:IProxy ):void	
@@ -219,7 +218,6 @@ package org.puremvc.as3.multicore.patterns.facade
 		/**
 		 * Register a <code>IMediator</code> with the <code>View</code>.
 		 * 
-		 * @param mediatorName the name to associate with this <code>IMediator</code>
 		 * @param mediator a reference to the <code>IMediator</code>
 		 */
 		public function registerMediator( mediator:IMediator ):void 
@@ -267,7 +265,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * 
 		 * <P>
 		 * Keeps us from having to construct new notification 
-		 * instances in our implementation code.
+		 * instances in our implementation code.</P>
 		 * @param notificationName the name of the notiification to send
 		 * @param body the body of the notification (optional)
 		 * @param type the type of the notification (optional)
@@ -283,7 +281,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * This method is left public mostly for backward 
 		 * compatibility, and to allow you to send custom 
 		 * notification classes using the facade.</P>
-		 *<P> 
+		 * <P>
 		 * Usually you should just call sendNotification
 		 * and pass the parameters, never having to 
 		 * construct the notification yourself.</P>
@@ -324,7 +322,7 @@ package org.puremvc.as3.multicore.patterns.facade
 		 * Remove the Model, View, Controller and Facade 
 		 * instances for the given key.</P>
 		 * 
-		 * @param multitonKey of the Core to remove
+		 * @param key of the Core to remove
 		 */
 		public static function removeCore( key:String ) : void
 		{

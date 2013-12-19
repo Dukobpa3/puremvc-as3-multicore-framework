@@ -20,7 +20,7 @@ package org.puremvc.as3.multicore.interfaces
 	 * <LI>Providing a method for attaching <code>IObservers</code> to an <code>INotification</code>'s observer list.</LI>
 	 * <LI>Providing a method for broadcasting an <code>INotification</code>.</LI>
 	 * <LI>Notifying the <code>IObservers</code> of a given <code>INotification</code> when it broadcast.</LI>
-	 * </UL>
+	 * </UL></P>
 	 * 
 	 * @see org.puremvc.as3.multicore.interfaces.IMediator IMediator
 	 * @see org.puremvc.as3.multicore.interfaces.IObserver IObserver
@@ -40,7 +40,7 @@ package org.puremvc.as3.multicore.interfaces
 
 		/**
 		 * Remove a group of observers from the observer list for a given Notification name.
-		 * <P>
+		 * <P/>
 		 * @param notificationName which observer list to remove from 
 		 * @param notifyContext removed the observers with this object as their notifyContext
 		 */
@@ -56,7 +56,7 @@ package org.puremvc.as3.multicore.interfaces
 		 * 
 		 * @param notification the <code>INotification</code> to notify <code>IObservers</code> of.
 		 */
-		function notifyObservers( note:INotification ) : void;
+		function notifyObservers( notification:INotification ) : void;
 
 		/**
 		 * Register an <code>IMediator</code> instance with the <code>View</code>.
@@ -65,14 +65,13 @@ package org.puremvc.as3.multicore.interfaces
 		 * Registers the <code>IMediator</code> so that it can be retrieved by name,
 		 * and further interrogates the <code>IMediator</code> for its 
 		 * <code>INotification</code> interests.</P>
-		 * <P>
+		 * <P/>
 		 * If the <code>IMediator</code> returns any <code>INotification</code> 
 		 * names to be notified about, an <code>Observer</code> is created encapsulating 
 		 * the <code>IMediator</code> instance's <code>handleNotification</code> method 
 		 * and registering it as an <code>Observer</code> for all <code>INotifications</code> the 
-		 * <code>IMediator</code> is interested in.</p>
+		 * <code>IMediator</code> is interested in.
 		 * 
-		 * @param mediatorName the name to associate with this <code>IMediator</code> instance
 		 * @param mediator a reference to the <code>IMediator</code> instance
 		 */
 		function registerMediator( mediator:IMediator ) : void;

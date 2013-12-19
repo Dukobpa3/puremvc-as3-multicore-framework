@@ -118,7 +118,7 @@ package org.puremvc.as3.multicore.interfaces
 		 * This method is left public mostly for backward 
 		 * compatibility, and to allow you to send custom 
 		 * notification classes using the facade.</P>
-		 *<P> 
+		 * <P>
 		 * Usually you should just call sendNotification
 		 * and pass the parameters, never having to 
 		 * construct the notification yourself.</P>

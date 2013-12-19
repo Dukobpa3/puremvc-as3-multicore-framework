@@ -21,7 +21,7 @@ package org.puremvc.as3.multicore.interfaces
 	 * to handle a given <code>INotification</code> when notified by the <code>View</code>.</LI>
 	 * <LI> Calling the <code>ICommand</code>'s <code>execute</code>
 	 * method, passing in the <code>INotification</code>.</LI> 
-	 * </UL>
+	 * </UL></P>
 	 *
 	 * @see org.puremvc.as3.multicore.interfaces INotification
 	 * @see org.puremvc.as3.multicore.interfaces ICommand

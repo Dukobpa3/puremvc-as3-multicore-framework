@@ -29,7 +29,7 @@ package org.puremvc.as3.multicore.patterns.command
 	 * calling <code>addSubCommand</code> once for each <i>SubCommand</i>
 	 * to be executed.</P>
 	 * 
-	 * <P>
+	 *
 	 * 
 	 * @see org.puremvc.as3.multicore.core.Controller Controller
 	 * @see org.puremvc.as3.multicore.patterns.observer.Notification Notification
@@ -77,7 +77,7 @@ package org.puremvc.as3.multicore.patterns.command
 		 *		}
 		 * </listing>
 		 * 
-		 * <P>
+		 *
 		 * Note that <i>SubCommand</i>s may be any <code>ICommand</code> implementor,
 		 * <code>MacroCommand</code>s or <code>SimpleCommands</code> are both acceptable.
 		 */
@@ -102,7 +102,7 @@ package org.puremvc.as3.multicore.patterns.command
 		/** 
 		 * Execute this <code>MacroCommand</code>'s <i>SubCommands</i>.
 		 * 
-		 * <P>
+		 *
 		 * The <i>SubCommands</i> will be called in First In/First Out (FIFO)
 		 * order. 
 		 * 

@@ -15,7 +15,7 @@ package org.puremvc.as3.multicore.interfaces
 	 * <LI>Encapsulate the notification context (this) of the interested object.</LI>
 	 * <LI>Provide methods for setting the interested object' notification method and context.</LI>
 	 * <LI>Provide a method for notifying the interested object.</LI>
-	 * </UL>
+	 * </UL></P>
 	 * 
 	 * <P>
 	 * PureMVC does not rely upon underlying event
@@ -32,8 +32,8 @@ package org.puremvc.as3.multicore.interfaces
 	 * <P> 
 	 * An Observer is an object that encapsulates information
 	 * about an interested object with a notification method that
-	 * should be called when an </code>INotification</code> is broadcast. The Observer then
-	 * acts as a proxy for notifying the interested object.
+	 * should be called when an <code>INotification</code> is broadcast. The Observer then
+	 * acts as a proxy for notifying the interested object.</P>
 	 * 
 	 * <P>
 	 * Observers can receive <code>Notification</code>s by having their

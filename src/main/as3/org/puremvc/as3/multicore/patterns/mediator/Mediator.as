@@ -45,7 +45,7 @@ package org.puremvc.as3.multicore.patterns.mediator
 		/**
 		 * Set the <code>IMediator</code>'s view component.
 		 * 
-		 * @param Object the view component
+		 * @param viewComponent the view component
 		 */
 		public function setViewComponent( viewComponent:Object ):void 
 		{
@@ -91,7 +91,7 @@ package org.puremvc.as3.multicore.patterns.mediator
 		 * <P>
 		 * Typically this will be handled in a switch statement,
 		 * with one 'case' entry per <code>INotification</code>
-		 * the <code>Mediator</code> is interested in.
+		 * the <code>Mediator</code> is interested in.</P>
 		 */ 
 		public function handleNotification( notification:INotification ):void {}
 		

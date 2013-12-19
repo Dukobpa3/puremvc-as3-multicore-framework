@@ -21,7 +21,7 @@ package org.puremvc.as3.multicore.core
 	 * <LI>Providing a method for attaching <code>IObservers</code> to an <code>INotification</code>'s observer list.</LI>
 	 * <LI>Providing a method for broadcasting an <code>INotification</code>.</LI>
 	 * <LI>Notifying the <code>IObservers</code> of a given <code>INotification</code> when it broadcast.</LI>
-	 * </UL>
+	 * </UL></P>
 	 * 
 	 * @see org.puremvc.as3.multicore.patterns.mediator.Mediator Mediator
 	 * @see org.puremvc.as3.multicore.patterns.observer.Observer Observer
@@ -37,7 +37,7 @@ package org.puremvc.as3.multicore.core
 		 * This <code>IView</code> implementation is a Multiton, 
 		 * so you should not call the constructor 
 		 * directly, but instead call the static Multiton 
-		 * Factory method <code>View.getInstance( multitonKey )</code>
+		 * Factory method <code>View.getInstance( multitonKey )</code></P>
 		 * 
 		 * @throws Error Error if instance for this Multiton key has already been constructed
 		 * 
@@ -131,7 +131,7 @@ package org.puremvc.as3.multicore.core
 						
 		/**
 		 * Remove the observer for a given notifyContext from an observer list for a given Notification name.
-		 * <P>
+		 *
 		 * @param notificationName which observer list to remove from 
 		 * @param notifyContext remove the observer with this object as its notifyContext
 		 */
@@ -165,14 +165,13 @@ package org.puremvc.as3.multicore.core
 		 * Registers the <code>IMediator</code> so that it can be retrieved by name,
 		 * and further interrogates the <code>IMediator</code> for its 
 		 * <code>INotification</code> interests.</P>
-		 * <P>
+		 * <P/>
 		 * If the <code>IMediator</code> returns any <code>INotification</code> 
 		 * names to be notified about, an <code>Observer</code> is created encapsulating 
 		 * the <code>IMediator</code> instance's <code>handleNotification</code> method 
 		 * and registering it as an <code>Observer</code> for all <code>INotifications</code> the 
-		 * <code>IMediator</code> is interested in.</p>
+		 * <code>IMediator</code> is interested in.
 		 * 
-		 * @param mediatorName the name to associate with this <code>IMediator</code> instance
 		 * @param mediator a reference to the <code>IMediator</code> instance
 		 */
 		public function registerMediator( mediator:IMediator ) : void
@@ -269,7 +268,7 @@ package org.puremvc.as3.multicore.core
 		/**
 		 * Remove an IView instance
 		 * 
-		 * @param multitonKey of IView instance to remove
+		 * @param key of IView instance to remove
 		 */
 		public static function removeView( key:String ):void
 		{
