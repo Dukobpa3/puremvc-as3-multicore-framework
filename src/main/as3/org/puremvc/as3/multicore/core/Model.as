@@ -10,21 +10,17 @@ package org.puremvc.as3.multicore.core
 	/**
 	 * A Multiton <code>IModel</code> implementation.
 	 * 
-	 * <P>
-	 * In PureMVC, the <code>Model</code> class provides
+	 * <P>In PureMVC, the <code>Model</code> class provides
 	 * access to model objects (Proxies) by named lookup.</P>
 	 * 
-	 * <P>
-	 * The <code>Model</code> assumes these responsibilities:</P>
-	 * 
+	 * <P>The <code>Model</code> assumes these responsibilities:
 	 * <UL>
 	 * <LI>Maintain a cache of <code>IProxy</code> instances.</LI>
 	 * <LI>Provide methods for registering, retrieving, and removing 
 	 * <code>IProxy</code> instances.</LI>
-	 * </UL>
+	 * </UL></P>
 	 * 
-	 * <P>
-	 * Your application must register <code>IProxy</code> instances 
+	 * <P>Your application must register <code>IProxy</code> instances
 	 * with the <code>Model</code>. Typically, you use an 
 	 * <code>ICommand</code> to create and register <code>IProxy</code> 
 	 * instances once the <code>Facade</code> has initialized the Core 
@@ -51,7 +47,7 @@ package org.puremvc.as3.multicore.core
 			if (instanceMap[ key ] != null) throw Error(MULTITON_MSG);
 			multitonKey = key;
 			instanceMap[ multitonKey ] = this;
-			proxyMap = new Array();	
+			proxyMap = [ ];
 			initializeModel();	
 		}
 		

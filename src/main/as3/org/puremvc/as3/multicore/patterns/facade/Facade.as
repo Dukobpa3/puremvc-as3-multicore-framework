@@ -85,25 +85,24 @@ package org.puremvc.as3.multicore.patterns.facade
 		/**
 		 * Initialize the <code>Model</code>.
 		 * 
-		 * <P>
-		 * Called by the <code>initializeFacade</code> method.
+		 * <P>Called by the <code>initializeFacade</code> method.
 		 * Override this method in your subclass of <code>Facade</code> 
-		 * if one or both of the following are true:</P>
+		 * if one or both of the following are true:
 		 * <UL>
 		 * <LI> You wish to initialize a different <code>IModel</code>.</LI>
 		 * <LI> You have <code>Proxy</code>s to register with the Model that do not 
 		 * retrieve a reference to the Facade at construction time.</LI>
-		 * </UL>
-		 * If you don't want to initialize a different <code>IModel</code>, 
+		 * </UL></P>
+		 *
+		 * <P>If you don't want to initialize a different <code>IModel</code>,
 		 * call <code>super.initializeModel()</code> at the beginning of your
-		 * method, then register <code>Proxy</code>s.
-		 * <P>
-		 * Note: This method is <i>rarely</i> overridden; in practice you are more
+		 * method, then register <code>Proxy</code>s.</P>
+		 *
+		 * <P>Note: This method is <i>rarely</i> overridden; in practice you are more
 		 * likely to use a <code>Command</code> to create and register <code>Proxy</code>s
 		 * with the <code>Model</code>, since <code>Proxy</code>s with mutable data will likely
 		 * need to send <code>INotification</code>s and thus will likely want to fetch a reference to 
-		 * the <code>Facade</code> during their construction. 
-		 * </P>
+		 * the <code>Facade</code> during their construction.</P>
 		 */
 		protected function initializeModel( ):void {
 			if ( model != null ) return;

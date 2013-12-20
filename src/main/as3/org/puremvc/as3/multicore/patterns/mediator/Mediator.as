@@ -18,8 +18,7 @@ package org.puremvc.as3.multicore.patterns.mediator
 		/**
 		 * The name of the <code>Mediator</code>. 
 		 * 
-		 * <P>
-		 * Typically, a <code>Mediator</code> will be written to serve
+		 * <P>Typically, a <code>Mediator</code> will be written to serve
 		 * one specific control or group controls and so,
 		 * will not have a need to be dynamically named.</P>
 		 */

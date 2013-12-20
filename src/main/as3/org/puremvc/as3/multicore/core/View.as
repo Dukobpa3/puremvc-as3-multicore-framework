@@ -47,8 +47,8 @@ package org.puremvc.as3.multicore.core
 			if (instanceMap[ key ] != null) throw Error(MULTITON_MSG);
 			multitonKey = key;
 			instanceMap[ multitonKey ] = this;
-			mediatorMap = new Array();
-			observerMap = new Array();	
+			mediatorMap = [ ];
+			observerMap = [ ];
 			initializeView();	
 		}
 		
@@ -114,7 +114,7 @@ package org.puremvc.as3.multicore.core
 
 				// Copy observers from reference array to working array, 
 				// since the reference array may change during the notification loop
-   				var observers:Array = new Array(); 
+   				var observers:Array = [];
    				var observer:IObserver;
 				for (var i:Number = 0; i < observers_ref.length; i++) { 
 					observer = observers_ref[ i ] as IObserver;
