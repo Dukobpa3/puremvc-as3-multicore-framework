@@ -9,9 +9,15 @@
 	<packaging>swc</packaging>
 
 	<parent>
-		<groupId>com.playtika.puremvc</groupId>
-		<artifactId>puremvc-core</artifactId>
+		<groupId>com.playtika.client</groupId>
+		<artifactId>libs-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
+
+	<build>
+		<finalName>${project.name}</finalName>
+		<sourceDirectory>src/main/as3</sourceDirectory>
+		<testSourceDirectory>src/test/as3</testSourceDirectory>
+	</build>
 
 </project>
